@@ -5,9 +5,9 @@ class HornedBeast extends React.Component{
         return(
             <>
             <article>
-                <h1>(this.props.  )</h1>
-                <h2>(this.props.  )</h2>
-                <h3>(this.props.  )</h3>
+                <h1>(this.props.name)</h1>
+                <h2>(this.props.picture)</h2>
+                <h3>(this.props.blerb)</h3>
             </article>
             </>
         );
