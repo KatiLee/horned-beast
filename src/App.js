@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Header from './Header.js';
+import Main from './Main.js'
 
 class App extends React.Component {
 
@@ -8,9 +10,9 @@ class App extends React.Component {
     return(
       //add components
       <>
-      <p>
-        
-      </p>
+     <Header/>
+      <Main/>
+      <footer>Brought To You By Kati Lee</footer>
       </>
     )
 
@@ -19,3 +21,4 @@ class App extends React.Component {
 }
 
 export default App;
+
