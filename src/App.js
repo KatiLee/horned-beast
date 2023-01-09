@@ -12,7 +12,7 @@ class App extends React.Component {
       <>
      <Header/>
       <Main/>
-      <footer></footer>
+      <footer>Brought To You By Kati Lee</footer>
       </>
     )
 
