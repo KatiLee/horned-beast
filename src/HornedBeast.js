@@ -1,4 +1,6 @@
 import React from 'react';
+import './HornedBeast.css';
+
 
 class HornedBeast extends React.Component{
     render(){
@@ -6,7 +8,7 @@ class HornedBeast extends React.Component{
             <>
             <article>
              <h2>{this.props.title}</h2>
-             <img onClick={this.handleLikeClick} src={this.props.imageURL} alt={this.props.title} title={this.props.title}/>
+             onClick={this.handleLikeClick} src={this.props.imageURL} alt={this.props.title} title={this.props.title}/>
              </article>
              </>
         );
