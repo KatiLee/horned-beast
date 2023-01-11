@@ -42,9 +42,7 @@ class Main extends React.Component {
             <main>
                 {hornedBeastsData.map(beast => {
                     return <HornedBeast title={beast.title} description={beast.description} imageURL={beast.image_url} />;
-                }
-                )
-                }
+                })}
             </main>);
     }
 }
