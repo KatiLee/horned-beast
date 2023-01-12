@@ -3,22 +3,20 @@ import HornedBeast from './HornedBeast.js';
 import data from './data.json';
 
 class Main extends React.Component {
-    render (){
+    render() {
         let beast = [];
-        data.forEach((newBeast, index)) => {
+        data.forEach((newBeast, index) => {
             beast.push(
-                <Beast beastName={newBeast.name} image_url={newBeast.image_url} key={index}/>
+                <HornedBeast beastName={newBeast.name} image_url={newBeast.image_url} key={index} />
             );
-        }
-            return(
+        });
+        return (
             <main>
-            {beast}
-                </main>
-                );
-            }
-        }
-
-
+                {beast}
+            </main>
+        );
+    };
+}
 export default Main;
 
 
