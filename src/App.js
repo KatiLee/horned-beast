@@ -9,11 +9,10 @@ class App extends React.Component {
 
   render(){
     return(
-      //add components
       <>
      <Header/>
       <Main/>
-      <footer>Brought To You By Kati Lee</footer>
+      <Footer/>
       </>
     )
 
