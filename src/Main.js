@@ -1,5 +1,6 @@
 import React from 'react';
 import HornedBeast from './HornedBeast.js';
+import data from './data.json';
 
 class Main extends React.Component {
     render (){
@@ -25,16 +26,5 @@ class Main extends React.Component {
             }
         }
 
-    }
-    render() {
-        const { hornedBeastsData } = this.state;
-        return (
-            <main>
-                {hornedBeastsData.map(beast => {
-                    return <HornedBeast title={beast.title} description={beast.description} imageURL={beast.image_url} />;
-                })}
-            </main>);
-    }
-}
 
 export default Main;
