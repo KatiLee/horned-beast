@@ -4,6 +4,7 @@ import data from './data.json';
 
 class Main extends React.Component {
     render (){
+        console.log('data?', data);
         return(
             <>
             <HornedBeast
