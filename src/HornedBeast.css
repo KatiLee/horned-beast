@@ -1,0 +1,7 @@
+article {
+    border: 8px;
+    border-color: darkgoldenrod;
+    border-width: 16px;
+    box-shadow: 3px;
+    border-style: groove;
+}
