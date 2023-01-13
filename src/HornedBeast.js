@@ -39,8 +39,9 @@ notScary = () => {
             <p>{this.state.likes}   Likes!</p>
             <p onClick={this.handleLikes}>Do you Love this beast? Let us know by CLICKING HERE!</p>
 
-             <Button variant="success" onClick={this.tooScary} className="buttonMargin"></Button>
-             <Button variant="success" ></Button>
+             <div>{this.state.tooScary ? 'RUN AWAY!' : ''}</div>
+             <Button variant="success" onClick={this.tooScary} className="buttonMargin">This horned beast is TOO scary!</Button>
+             <Button variant="primary" onClick={this.notScary}>I'm not scared of this beast, it seems nice.</Button>
              
              
              
