@@ -1,6 +1,6 @@
 import React from 'react';
 import './HornedBeast.css';
-
+import Button from 'react-bootstrap/Button';
 
 class HornedBeast extends React.Component{
 constructor(props){
@@ -39,8 +39,8 @@ notScary = () => {
             <p>{this.state.likes}   Likes!</p>
             <p onClick={this.handleLikes}>Do you Love this beast? Let us know by CLICKING HERE!</p>
 
-             <Button onClick={this.tooScary} className="buttonMargin"></Button>
-             <Button vartiant="success" ></Button>
+             <Button variant="success" onClick={this.tooScary} className="buttonMargin"></Button>
+             <Button variant="success" ></Button>
              
              
              
