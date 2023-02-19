@@ -1,6 +1,7 @@
 import React from 'react';
 import './HornedBeast.css';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
+import { Card, Button, Col } from 'react-bootstrap';
 
 class HornedBeast extends React.Component{
 constructor(props){
@@ -34,23 +35,27 @@ notScary = () => {
     render(){
         return(
             <>
-            <article>
-             <h2>{this.props.beastName}</h2>
-             <img src={this.props.image_url} alt={this.props.title} title={this.props.title}/>
-             <p>{this.props.description}</p>
-            <p>{this.state.likes}   Likes!</p>
-            <p onClick={this.handleLikes}>Do you Love this beast?💋  Let us know by CLICKING HERE!</p>
-
-             <div>{this.state.tooScary ? 'RUN AWAY!' : 'Awe, give em a little smooch!'}</div>
-             <Button 
-             variant="success" 
-             onClick={this.tooScary} 
-             className="buttonMargin">This horned beast is TOO scary!</Button>
-             <Button 
-             variant="primary" 
-             onClick={this.notScary}>I'm not scared of this beast, it seems nice.</Button>
-
-             </article>
+            <Col className="mt-4">
+                <Card className="h-100 p-3">
+                    <Card.Title onClick={this.helpHandleOnShow}>
+                        {this.props.title}
+                    </Card.Title>
+                    <Card.Img
+                    className='mb-4'
+                    src={this.props.image_url}
+                    alt={this.props.description}
+                    title={this.props.title}
+                    onClick={this.props.addSmooch}
+                    />
+                <p>{this.state.likes} Likes</p>
+                <p onClick={this.handleLikes}>Click to Love this beast!</p>
+                <div>{this.state.tooScary ? 'Give the cutie a smooch!' : ''}</div>
+                <Button onClick={this.needsSmooch} className="buttonMargin">This beast is too scary!</Button>
+                <Button variant="success" onClick={this.tooScary}>
+                    I'm not scared at all!
+                </Button>
+                </Card>
+            </Col>
              </>
         );
     }
