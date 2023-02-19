@@ -5,3 +5,36 @@ article {
     box-shadow: 3px;
     border-style: groove;
 }
+
+article img {
+    width: 100%;
+    height: 250px;
+}
+
+article p:last-of-type {
+    padding-left:  1rem;
+    cursor: pointer;
+}
+
+article p:last-of-type:hover {
+    color:cadetblue;
+    font-weight: bolder;
+}
+
+.article-button {
+    margin: 5px;
+}
+
+.buttonMargin {
+    margin: 8px;
+}
+
+p {
+    color: floralwhite;
+    padding: 8px;
+}
+
+h4 {
+    background-color: lightcoral;
+    padding: 8px;
+}
