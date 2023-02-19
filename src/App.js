@@ -4,8 +4,10 @@ import Header from './Header.js';
 import Main from './Main.js'
 import Footer from './Footer.js'
 import data from './data.json';
-import { Modal } from 'react-bootstrap/Modal';
+import Modal from 'react-bootstrap/Modal';
 import HornedBeast from './HornedBeast';
+import SelectedBeast from './SelectedBeast';
+
 
 class App extends React.Component {
 
@@ -51,6 +53,12 @@ class App extends React.Component {
       handleClose = {this.handleClose}
       />
       <Footer/>
+      <SelectedBeast/>
+      <Modal show={this.state.showModal} onHide={this.handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{this.state.selectBeast}</Modal.Title>
+        </Modal.Header>
+        </Modal>
       </div>
     );
   }
