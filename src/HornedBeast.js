@@ -14,6 +14,7 @@ handleLikes = () => {
     this.setState = ({
         likes: this.state.likes + 1,
         });
+        console.log('how many likes? ', this.state.likes)
     }
 
 tooScary = () => {
@@ -39,13 +40,15 @@ notScary = () => {
             <p>{this.state.likes}   Likes!</p>
             <p onClick={this.handleLikes}>Do you Love this beast? Let us know by CLICKING HERE!</p>
 
-             <div>{this.state.tooScary ? 'RUN AWAY!' : ''}</div>
-             <Button variant="success" onClick={this.tooScary} className="buttonMargin">This horned beast is TOO scary!</Button>
-             <Button variant="primary" onClick={this.notScary}>I'm not scared of this beast, it seems nice.</Button>
-             
-             
-             
-             
+             <div>{this.state.tooScary ? 'RUN AWAY!' : 'Awe, give em a little smooch!'}</div>
+             <Button 
+             variant="success" 
+             onClick={this.tooScary} 
+             className="buttonMargin">This horned beast is TOO scary!</Button>
+             <Button 
+             variant="primary" 
+             onClick={this.notScary}>I'm not scared of this beast, it seems nice.</Button>
+
              </article>
              </>
         );
