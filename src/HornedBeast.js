@@ -6,12 +6,13 @@ class HornedBeast extends React.Component{
 constructor(props){
     super(props);
     this.state = {
-        likes: 0
-    }
+        likes: 0,
+        tooScary: false,
+    };
 }
 
 handleLikes = () => {
-    this.setState = ({
+    this.setState({
         likes: this.state.likes + 1,
         });
         console.log('how many likes? ', this.state.likes)
