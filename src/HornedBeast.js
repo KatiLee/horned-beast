@@ -39,7 +39,7 @@ notScary = () => {
              <img src={this.props.image_url} alt={this.props.title} title={this.props.title}/>
              <p>{this.props.description}</p>
             <p>{this.state.likes}   Likes!</p>
-            <p onClick={this.handleLikes}>Do you Love this beast? Let us know by CLICKING HERE!</p>
+            <p onClick={this.handleLikes}>Do you Love this beast?💋  Let us know by CLICKING HERE!</p>
 
              <div>{this.state.tooScary ? 'RUN AWAY!' : 'Awe, give em a little smooch!'}</div>
              <Button 
