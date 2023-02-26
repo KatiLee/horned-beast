@@ -4,8 +4,9 @@ import Header from './Header.js';
 import Main from './Main.js'
 import Footer from './Footer.js'
 import data from './data.json';
-import { Modal } from 'react-bootstrap/Modal';
 import HornedBeast from './HornedBeast';
+import SelectedBeast from './SelectedBeast';
+
 
 class App extends React.Component {
 
@@ -14,20 +15,14 @@ class App extends React.Component {
     this.state = {
       heartEmoji: '',
       showModal: false,
-      selectBeast: '',
+      selectedBeast: '',
     }
   }
 
-  addHeartEmoji = () => {
-    this.setState({
-      heartEmoji: this.state.heartEmoji + "💖"
-    });
-  };
-
-  handleOnShow = (selectBeast) => {
+  handleOnShow = (selectedBeast) => {
     this.setState({
       showModal: true,
-      selectBeast: selectBeast
+      selectedBeast: selectedBeast
     });
   };
 
@@ -46,11 +41,12 @@ class App extends React.Component {
       data = {data}
       />
       <HornedBeast
-      selectBeast = {this.state.selectBeast}
+      selectedBeast = {this.state.selectedBeast}
       handleOnShow = {this.state.showModal}
       handleClose = {this.handleClose}
       />
       <Footer/>
+
       </div>
     );
   }

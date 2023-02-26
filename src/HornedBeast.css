@@ -4,10 +4,12 @@ article {
     border-width: 16px;
     box-shadow: 3px;
     border-style: groove;
+     width: 250px;
+    height: 250px;
 }
 
 article img {
-    width: 100%;
+    width: 250px;
     height: 250px;
 }
 
